@@ -6,4 +6,5 @@ Los cupones de descuento han sido configurados como objetos con las propiedades 
 
 Para encontrar el cupón que coincide con el ingresado por el usuario se ha utilizado el método FIND( ) (línea 96 de archivo JavaScript)
 
-Mira la demo aquí:
+Mira la demo aquí: https://raulsr92.github.io/Calculadora3-JavaScript-Find-method/index4.html
+
