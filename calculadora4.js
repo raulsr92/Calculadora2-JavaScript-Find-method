@@ -110,7 +110,7 @@ function calcularDescuento(){
 				resultadoFinal.innerHTML = "El cupón " + cuponString+ " no tiene descuento";
 				dctoFinal.innerHTML = "0"
 			}
-
+			
 			console.log(resultadoFinal.innerHTML);
 
 
