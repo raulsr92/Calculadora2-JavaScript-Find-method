@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-calculadora4.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Ingresa tu cupón de descuento</title>
+</head>
+<body>
+        <header>
+					<h2> Ingresa tu cupón de descuento</h2>
+					<img src="./icons/cupon.png" alt="icono de descuento">
+        </header>
+				<main>
+					<form action="">
+						<section>
+							<label for="precio-etiqueta" class="precio-label"> Precio sin descuento </label>
+							<input type="number" id="precio-etiqueta" placeholder="Precio">
+							<p> $</p>
+						</section>
+						<section id="cupon-section">
+							<label for="cupon" class="cupon-label"> Cupón de Descuento </label>
+							<input type="text" id="cupon" placeholder="Agrega un código">
+						</section>
+            <button type="button" class="button-calcule"> Aplicar Cupón </button>
+            <p class="precio-container"> Precio final:
+							<span class="resultado inactive"></span>
+							<span class="advertencia inactive"></span>
+            </p>
+						<p class="descuento-container">
+							Descuento Aplicado:
+							<span class="descuento-final inactive"> 
+						</p>
+						<button type="reset" class="button-calcule reset"> Limpiar </button>
+					</form>
+				</main>
+				<script src="calculadora4.js"></script>
+</body>
+</html>
