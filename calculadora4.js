@@ -102,21 +102,18 @@ function calcularDescuento(){
 			cuponElegido = cupones.find(buscarCupon);
 			console.log(cuponElegido);
 
-			resultadoFinal.innerHTML = "Su precio con dcto. es " + (precioInteger*(100-(cuponElegido.descuento)))/100 + " $";
-			dctoFinal.innerHTML = "Obtuvo un dcto. de" + " " + (cuponElegido.descuento) + " "+ "%";
-			console.log(cuponElegido.descuento)
-
-			// Condicional para el caso en que el cupón sea uno no existente. 
-			//Quiere decir que si luego del ciclo FOR
-			// ninguno cupon ingresado por el usuario coincide con los cupones 
-			//del array, se mostrará un mensaje que el 
-			// cupón no existe
-
-			if (resultadoFinal.innerHTML==""){
+			if(cuponElegido){
+				resultadoFinal.innerHTML = "Su precio con dcto. es " + (precioInteger*(100-(cuponElegido.descuento)))/100 + " $";
+				dctoFinal.innerHTML = "Obtuvo un dcto. de" + " " + (cuponElegido.descuento) + " "+ "%";
+				console.log(cuponElegido.descuento)
+			} else{
 				resultadoFinal.innerHTML = "El cupón " + cuponString+ " no tiene descuento";
 				dctoFinal.innerHTML = "0"
 			}
+
 			console.log(resultadoFinal.innerHTML);
+
+
 
 		}
 	}
